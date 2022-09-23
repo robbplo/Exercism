@@ -53,7 +53,7 @@ defmodule RomanNumerals do
     end
   end
 
-  defp get_subtractor(number) when number < 10, do: 1
+  defp get_subtractor(number) when number <= 10, do: 1
   defp get_subtractor(number) when number < 100 and number > 10, do: 10
   defp get_subtractor(_), do: 100
 end
